@@ -16,8 +16,8 @@ print((1-2)+2*6/2**2)
 
 # VARIABLES
 # Naming Convention: Includes letters, numbers, underscore (CANNOT START WITH A NUMBER)
-_avse12 = 1
-print(_avse12)
+_Variable12 = 1
+print(_Variable12)
 
 # STRINGS
 # Contained in " " or ' '
@@ -103,9 +103,10 @@ for n in range(101):
         continue
 
 # Functions
-def func(x):
-    print(x, "This is printed by a function\n")
+def func(parameter):
+    print(parameter, "This is printed by a function\n")
+    return parameter # RETURNING VALUES
 
-# Caliing a function
-func(x)
+# Calling a function
+x = func(10)
 
