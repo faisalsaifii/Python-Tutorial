@@ -15,6 +15,8 @@ print(5**2)
 print((1-2)+2*6/2**2)
 
 # VARIABLES
+# Global -> Can be accessed anywhere in the program
+# Local -> Declared insider a function which can only be used inside the function
 # Naming Convention: Includes letters, numbers, underscore (CANNOT START WITH A NUMBER)
 _Variable12 = 1
 print(_Variable12)
@@ -106,6 +108,9 @@ for n in range(101):
 def func(parameter1, parameter2 = 0): # = 0 -> Setting default value for parameter
     print(parameter1, "This is printed by a function\n")
     return parameter1 + parameter2 # RETURNING VALUES
+
+# Parameters -> Placeholders
+# Arguments -> Actual values that get passed through
 
 # Calling a function
 x = func(10) # 10,5 -> Arguments
