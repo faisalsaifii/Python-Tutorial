@@ -103,10 +103,10 @@ for n in range(101):
         continue
 
 # Functions
-def func(parameter):
-    print(parameter, "This is printed by a function\n")
-    return parameter # RETURNING VALUES
+def func(parameter1, parameter2 = 0): # = 0 -> Setting default value for parameter
+    print(parameter1, "This is printed by a function\n")
+    return parameter1 + parameter2 # RETURNING VALUES
 
 # Calling a function
-x = func(10)
+x = func(10) # 10,5 -> Arguments
 
