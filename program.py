@@ -86,6 +86,9 @@ elif name == "Ron":
     print("Bloody Hell Harry!")
 else:
     print("Wait a minute, who are you?")
+# Use 'in' for searching a list or set
+if 1 in players: 
+    print("Yes")
 
 # for loop
 foods = ["burger" , 'pizza' , 'pasta']
@@ -148,3 +151,7 @@ def function_that_takes_three_args(arg1,arg2,arg3):
 arglist = [1,2,3,4]
 # function_that_takes_three_args(*arglist) -> Error
 function_that_takes_three_args(*arglist[:3])
+
+# Sets: List with no duplicate elements
+example_set = {1,2,3,4,5}
+print(example_set)
