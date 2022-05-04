@@ -19,7 +19,7 @@ print(7//2)
 print(3%2)
 # ** -> Exponent(^)
 print(5**2)
-#Python handles numbers using BEDMAS
+# Python handles numbers using BEDMAS
 print((1-2)+2*6/2**2)
 
 # VARIABLES
@@ -28,6 +28,12 @@ print((1-2)+2*6/2**2)
 # Naming Convention: Includes letters, numbers, underscore (CANNOT START WITH A NUMBER)
 _Variable12 = 1
 print(_Variable12)
+
+# Multiple Declarations
+x,y = 1,2
+
+# Swapping Variables
+x,y = y,x
 
 # STRINGS
 # Contained in " " or ' '
@@ -133,3 +139,12 @@ def flexible_arg(*args):
     print(args)
 
 flexible_arg(1,2,3,4,5)
+
+# UNPACKING ARGUMENTS
+def function_that_takes_three_args(arg1,arg2,arg3):
+    print(arg1,arg2,arg3)
+# The list's elements are gonna be put into all the entries
+# Note: The number of elements passed must be equal to the number of arguments
+arglist = [1,2,3,4]
+# function_that_takes_three_args(*arglist) -> Error
+function_that_takes_three_args(*arglist[:3])
