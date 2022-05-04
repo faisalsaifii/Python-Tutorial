@@ -2,8 +2,16 @@
 '''
     Multi Line Comment
 '''
+
 # print() -> prints stuff
+# Separation of strings is through <space> by default
 print(10 , "Blablabla")
+# Use sep argument to change the separating character being used
+print("1", "2", sep=",")
+# By default the end is \n
+# Use end argument to change the ending of print function
+print("First line", end=" ")
+print("Next line")
 
 # // -> Removes decimal digits
 print(7//2)
@@ -117,4 +125,11 @@ x = func(10) # 10,5 -> Arguments
 
 # KEYWORD ARGUMENTS
 # Passing a specified argument
-func(parameter2=5)
+x = func(parameter2=5)
+
+# FLEXIBLE NUMBER OF ARGUMENTS
+# Common Practice: Name flexible argument "args"
+def flexible_arg(*args):
+    print(args)
+
+flexible_arg(1,2,3,4,5)
